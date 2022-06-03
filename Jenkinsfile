@@ -21,7 +21,7 @@ node {
         withCredentials([string(credentialsId: 'dockerpassword', variable: 'dockerhubpassword')]) {
     sh "docker login -u dattaviswanath -p ${dockerhubpassword}"
     }
-    sh 'docker container run -dt --name projectjavacalculator -p 8080:8080 dattaviswanath/javacalcpipeline1'
+    sh 'docker container run -dt -p 8080:8080 dattaviswanath/javacalcpipeline1'
           
 
     }
