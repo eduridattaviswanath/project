@@ -22,6 +22,7 @@ node {
     sh "docker login -u dattaviswanath -p ${dockerhubpassword}"
     }
     sh 'docker container run -dt --name javacalculator -p 8080:8080 dattaviswanath/javacalcpipeline1'
+#echo
           
 
     }
